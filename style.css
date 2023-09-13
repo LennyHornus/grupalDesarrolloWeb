@@ -1,0 +1,89 @@
+/* Estilos globales  ------------------------------------------------------------------------------------------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #c5c5c5;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    text-align: center;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Estilos globales - Barra de navegacion*/
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    font-family: Calibri, sans-serif;
+}
+
+li {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    background-color: rgb(16, 154, 159);
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos globales - Footer*/
+footer{
+    display: block;
+    height: 60px;
+    padding: 14px;
+    background-color: rgba(16, 154, 159);;
+    color: #fff;
+    text-align: center;
+    border-style: none;
+    
+
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.piePagina {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
