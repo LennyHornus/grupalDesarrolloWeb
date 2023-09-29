@@ -39,9 +39,13 @@ main{
 
 /* Estilos globales - Barra de navegacion*/
 header{
+    min-width: 100vw;
     position: relative;
     height: auto;
     font-family: 'Inter', sans-serif;
+    
+    background-color: var(--primary);
+    border-bottom: 1px solid rgb(214, 214, 214);
 }
 
 header ul {
@@ -240,10 +244,10 @@ footer{
     text-align: center;
     border-style: none;
     
-    position: absolute;
-    left: 0;
+    position: fixed;
+
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     text-align: center;
     display: flex;
@@ -258,4 +262,149 @@ footer{
     justify-content: space-around;
     align-content: center;
     align-items: center;
+}
+
+@media (min-width:600px){
+    nav label{
+        display: none;
+    }
+}
+
+@media (max-width:600px){
+    #menu, label{
+        display: none;
+    }
+
+    footer{
+        position: fixed;
+    }
+
+    .contenedorIntegrantes{
+        margin-bottom: 100px;
+    }
+
+    .contenedorProyecto{
+        height: 100vh;
+        flex-direction: column;
+        
+    }
+
+    .bloqueGris{
+        display: none;
+    }
+
+    .bloqueTexto p{
+        font-size: 1rem;
+    }
+
+    .contenedorAvances{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloqueParrafos{
+        height: fit-content;
+    }
+
+    .contenedorParrafos{
+        margin-top: 30px;
+        margin-bottom: 200px;
+    }
+
+    .sitioConstruccion{
+        height: 200px;
+    }
+
+    .info{
+        margin-top: 70px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: inherit;
+    
+        padding: 15px;
+        height: 450px;
+        background-color: var(--primary);
+        color: var(--brown);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        line-height: 70px;
+    }
+
+    
+    .info p{
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    header{
+        margin: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 40px;
+        margin-right: 20px;
+        margin-top: none;
+    }
+
+    nav label{
+        margin-top: 0px;
+    }
+    /*.navBarResponsive{
+        display: flex;
+        height: 100vh;
+        width: 420px;
+        margin-left: 30%;
+        margin-top: 19px;
+        background-color: rgb(112, 46, 112);
+        position: fixed;
+    }
+    */
+    input:checked ~ li{
+        display: block;
+    }
+    input:checked ~ label{
+        background-color: var(--brown);
+        height: 100vh;
+        width: 700px;
+        z-index: 100;
+    }
+    label:hover{
+        background-color: gray;
+    }
+    .listaNav li{
+        margin: 0;
+        display: none;
+    }
+    label{
+        box-sizing: border-box;
+        display: block;
+        font-size: 25px;
+        width: 30px;
+        height: 30px;
+        color: white;
+        margin-top: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+    .listaNav{
+        display: none;
+    }
+    .sitioConstruccion{
+        margin-top: 80px;
+        width: 500px;
+        height: 209px;
+    }
+    
+    
+}
+
+#menu{
+    display: none;
 }
