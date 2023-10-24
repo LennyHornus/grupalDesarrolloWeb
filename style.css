@@ -139,26 +139,53 @@ nav a{
 }
 .contenedorAvances{
     display: flex;
-}
-.contenedorParrafos{
-    height: 600px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .bloqueParrafos{
     background-color: var(--primary);
-    height: 160px;
+    height: fit-content;
     margin: 10px;
     padding: 19px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     
     line-height: 28px;
     color: var(--brown);
+}
+.bloqueParrafos ul{
+    list-style: none;
+}
+.bloqueParrafos li{
+    padding: 7px;
+    font-size: large;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+}
+.tituloAvance{
+    margin-top: 20px;
+}
+.coloresPaleta{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.imgColorPaleta{
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
+.logoEcoTravel{
+    height: 400px;
+    width: 450px;
+}
+.iconEcoTravel{
+    height: 100px;
+    width: 100px;
 }
 .pregunta{
     font-weight: bolder;
@@ -167,6 +194,16 @@ nav a{
 .respuesta{
     text-align: justify;
     font-size: 20px;
+}
+.linkFigma{
+    text-decoration: none;
+    color: var(--brown);
+}
+.roles{
+    margin-bottom: 50px;
+}
+.roles ul{
+    list-style: none;
 }
 .contenedorProyecto{
     display: flex;
@@ -310,9 +347,19 @@ footer{
         height: fit-content;
     }
 
-    .contenedorParrafos{
-        margin-top: 30px;
-        margin-bottom: 200px;
+    .arbolSitio{
+        width: 500px;
+        height: 500px;
+    }
+
+    .logoEcoTravel{
+        height: 300px;
+        width: 350px;
+    }
+
+    .iconEcoTravel{
+        height: 60px;
+        width: 60px;
     }
 
     .sitioConstruccion{
