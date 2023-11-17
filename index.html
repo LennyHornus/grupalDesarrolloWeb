@@ -3,96 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco Travel Inicio</title>
+    <title>Diseño Web Grupo 4</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid listaNav">
-                <a class="navbar-brand" href="./index.html"><img src="./assets/logoEcoTravelHeader.png" alt="Logo Eco Travel Header" class="logoHeader"></a>
-                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="btn btn-outline-light nav-boton" aria-current="page" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-light" href="./destinos/destinos.html">Destinos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-light" href="./nosotros/nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-light" href="./reserva/reserva.html">Reserva</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-light" href="./contacto/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <nav>
+            <input type="checkbox" id="menu">
+            <label for="menu">☰</label>
+            <ul class="menuDisplay">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./integrantes/integrantes.html">Integrantes</a></li>
+                <li><a href="./proyecto/proyecto.html">Proyecto</a></li>
+                <li><a href="./avances/avances.html">Avances</a></li>
+                <li><a href="./sitio/sitio.html">Sitio</a></li>
+            </ul>
+            <ul class="listaNav">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./integrantes/integrantes.html">Integrantes</a></li>
+                <li><a href="./proyecto/proyecto.html">Proyecto</a></li>
+                <li><a href="./avances/avances.html">Avances</a></li>
+                <li><a href="./sitio/sitio.html">Sitio del proyecto</a></li>
+            </ul>
         </nav>
     </header>
-    <main class="mainIndex">
-        <div class="containerIndex">
-            <div class="bloqueIndex">
-                <p>¡Bienvenido a EcoTravel, tu puerta de entrada al turismo sostenible en Argentina! Descubre 
-                    la belleza de nuestro país mientras te sumerges en una experiencia única en nuestros eco 
-                    hoteles. Conecta con la naturaleza, apoya la sostenibilidad y crea recuerdos inolvidables.</p>
-            </div>
-            <div class="bloqueIndex-2">
-                <p>Un ecohotel es un alojamiento comprometido con prácticas sostenibles. Se centran en el uso de materiales ecológicos, 
-                    la conservación de recursos y la preservación de la biodiversidad local, ofreciendo a 
-                    los huéspedes una experiencia de hospedaje consciente y responsable con el medio ambiente.</p>
-            </div>
+    <main>
+        <div class="info">
+            <h1 id="datosEquipo">Datos del equipo</h1>
+            <p>Número de grupo: 4</p>
+            <p>Año: 2023</p>
+            <p>Curso: 450948 - 2C - Tarde Viernes</p>
+            <p>Materia: Diseño y desarrollo web</p>
+            <p>Docente: Litovicius Patricia Carina</p>
         </div>
     </main>
-
     <footer>
-        <ul class="piePagina text-light pt-2 div-footer">
-            <div class="container text-center text-md-start ">
-                <div class="row text-center text-md-start">
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 p-font">
-                        <h5 class="text-uppercase mb-4 font-weight-bold text-light">Nosotros</h5>
-                        <hr class="mb-4">
-                        <p>Magali Catrinacio</p>
-                        <p>Lenny Ramos Hornus</p>
-                        <p>Franco Quintieri</p>
-                        <p>Valentin Banegas</p>
-                    </div>
-
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 p-font">
-                        <h5 class="text-uppercase mb-4 font-weight-bold text-light">Materia</h5>
-                        <hr class="mb-4">
-                        <p>
-                            Trabajo Grupal de la materia Diseño y desarollo web
-                        </p>
-                    </div>
-
-
-                    <div class="col-md-2 col-lg col-xl-2 mx-auto mt-3 p-font">
-                        <h5 class="text-uppercase mb-4 font-weight-bold text-light">Link</h5>
-                        <hr class="mb-4">
-                        <p>
-                            <a href="https://lennyhornus.github.io/grupalDesarrolloWeb/" class="text-light linkFooter">Enlace al sitio grupal</a>
-                        </p>
-                    </div>
-
-                    <hr class="mb-4">
-                    <div class="text-center mb-2 p-font">
-                        <p>
-                            © Copyright - Todos los derechos reservados - <a href="https://www.freepik.es/" class="text-light linkFooter" target="_blank">Freepik</a>
-                        </p>
-                        <h5 class="text-uppercase mb-4 font-weight-bold text-light"><li><img src="./assets/logoUade.png" alt="logoUadeFooter" class="logoUadeFooter"></li></h5>
-                    </div>
-                </div>
-            </div>
+        <ul class="piePagina">
+            <li><a href="https://www.uade.edu.ar/" target="_blank" class="uade">UADE</a></li>
+            <p>Materia: Diseño y Desarrollo Web</p>
+            <p>Docente: Patricia Litovicius</p>
         </ul>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
