@@ -349,6 +349,30 @@ footer{
     height: 100%;
 }
 
+.contenedorSitio h2{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.linkgrupal{
+    text-decoration: none;
+    color: var(--pink4);
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 40;
+
+}
+
+.tituloSitio{
+    font-size: 29px;
+    color: var(--green4);
+}
+
+.divlink{
+    margin-top: 20px;
+}
+
 /* Media Queries*/
 @media (min-width:601px){
     nav label{
