@@ -6,583 +6,562 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Sansita', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 :root {
-    --grey: rgb(46, 46, 46);
-    --pink4: #4f233f;
-    --pink3: #7D3A61;
-    --pink2: #9A4B8C;
-    --pink1: #e4d1e1;
-    --white: #E0E2E1;
-    --green: #84AF8B;
-    --green2: #2E7A45;
-    --green3: #275731;
-    --green4: #253828;
+    --primary: #5D8B5D;
+    --white: #D9D9D9;
+    --grey: #3E3D3D;
+    --brown: #836B47;
+    --lime: #c0d49f; 
+    --yellow: #d8ceaa;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--white);
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
     text-align: center;
     margin: 0;
     min-height: 100vh;
     position: relative;
-    background-color: var(--green);
-}
-
-main{
-    position: relative;
-}
-
-h1, h2, h3 {
-    font-family: "Times New Roman", Times, serif;
 }
 
 /* Estilos globales - Header*/
+
 header{
     min-width: 100vw;
     position: relative;
-    height: auto;
-    background-color: var(--green3);
+    font-family: 'Inter', sans-serif;
+    background-color: var(--primary);
+    height: 100px;
 }
 
-header ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-
-li {
-    padding: 20px;
-}
-
-nav {
+.listaNav{
     display: flex;
     flex-direction: row;
     padding: 10px;
-    background-color: var(--green3);
+    background-color: var(--primary);
     align-items: center;
     justify-content: space-around;
+    z-index: 100;
 }
 
-nav a{
-    text-decoration: none;
-    width: 30px;
-    color: var(--white);
-    font-size: 25px;
-    font-weight: bolder;
-    font-family: 'Inter', sans-serif;
-}
-nav a:hover{
-    color:rgb(161, 183, 161);
-    
+.navbar-nav{
+    gap: 120px;
+    margin-left: 120px;
+    width: 100%;
+    font-size: 20px;
 }
 
+.logoHeader{
+    height: 70px;
+    width: 125px;
+    border-radius: 30px;
+}
 
 /* Estilos globales - Footer*/
-footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-family: Calibri, sans-serif;
-    font-weight: bolder
-}
-footer a{
-    text-decoration: none;
-    width: 30px;
-    font-weight: bolder;
-}
 footer{
-    display: block;
-    padding: 14px;
-    background-color: rgb(66, 65, 65);
-    color: var(--white);
-    text-align: center;
-    border-style: none;
-    position: fixed;
-    bottom: 0;
+    background-color: var(--grey);
     width: 100vw;
-    height: 80px;
-    text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    position:absolute;
 }
 
-.uade{
-    color: var(--white);
+footer ul{
+    list-style: none;
+    width: 70%;
+    margin-top: 15px;
 }
 
-.piePagina {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
+.piePagina{
+    margin-right: 50px;
 }
 
-.logoFooter{
-    margin-top: 8px;
-    width: 50px;
-    height: 18px;
+.logoUadeFooter{
+    width: 115px;
+    height: 60px;
+}
+
+.linkFooter{
+    text-decoration: none;
+}
+
+.p-font, .p-font a{
+    font-weight: 500;
 }
 
 /* Index */
 
-.info{
-    margin-top: 50px;
-    margin-bottom: 20px;
-    padding: 15px;
-    height: 450px;
-    width: 40%;
-    background-color: var(--white);
-    margin-left: 30%;
-    color: var(--pink3);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    line-height: 70px;
-    text-indent: 30px;
-}
-
-#datosEquipo{
-    color: var(--pink4);
-    font-weight: bolder;
-    font-size: 35px;
-    align-self: center;
-    font-family: 'Inter', sans-serif;
-}
-
-.info p, h2{
-    font-size: 25px;
-    font-weight:700;
-    font-family: 'Sansita', sans-serif;
-}
-
-/* Integrantes */
-.contenedorIntegrantes{
-    display: flex;
-    justify-content: center;
-    margin-top: 110px;
-    gap: 90px;
-    margin-bottom: 30px;
-    font-size: 20px;
-}
-
-.perfilCv a{
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--green4);
-}
-
-.perfilCv p{
-    color:var(--green3);
-    font-weight: bold;
-}
-
-#contenedorCv a{
-    display: flex;
-    justify-content: space-around;
-}
-
-.fotosPerfil{
-    width: 200px;
-    height: 200px;
-}
-
-/* Avances */
-
-.contenedorAvances{
-    display: flex;
+.mainIndex{
+    background-image: url("./assets/fondo-desk-5.jpg");
+    background-repeat: round;
     width: 100vw;
-    flex-direction: column;
-    margin-bottom: 50px;
-    background-color: var(--white);
+    height: 90vh;
 }
 
-.bloqueParrafos{
-    background-color: var(--green);
-    height: fit-content;
-    margin: 30px;
+.containerIndex{
+    display: flex;
+    flex-direction: column;
+}
+
+.bloqueIndex{
+    background-color: #3938389d;
+    width: 500px;
+    height: 160px;
+    margin-left: 12%;
+    margin-top: 5%;
+    border-radius: 10px;
     padding: 20px;
+    color: rgb(235, 225, 225);
+}
+
+.bloqueIndex-2{
+    background-color: #3938389d;
+    width: 500px;
+    height: 180px;
+    margin-left: 56%;
+    margin-top: 6%;
     border-radius: 10px;
+    padding: 20px;
+    color: rgb(235, 225, 225);
+}
+
+/*Destino*/
+
+.mainDestinos{
+    width: 100vw;
+    height: 100%;
+    background-color: var(--lime);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 45px;
-    color: var(--grey);
-    margin-left: 60px;
 }
 
-.bloqueParrafos p{
-    width: 80%;
+.carousel-container {
+    width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    max-height:550px;
+    background-color: var(--lime);
+    margin-bottom: 40px;
+    box-shadow: -5px 3px 5px  gray, 5px 3px 5px gray;
 }
 
-.bloqueParrafos ul{
-    list-style: none;
+.textoCarrusel {
+    color: var(--white); 
+    text-shadow: 3px 3px 3px #080808;
+    font-weight: bol;
+    padding-top: 30px; 
 }
 
-.bloqueParrafos li{
-    padding: 7px;
-    font-size: large;
-    line-height: 25px;
+.container-cards{
+    margin-top: 8%;
 }
 
-.logos{
-    display: flex;
-    flex-direction: row;
+#card{
+    border: none;
+    background-color: #416141;
+    position: relative;
 }
 
-.tituloAvance{
+.card{
+    margin: 7% 0;
+}
+
+.card-body{
+    background-color:#416141;
+    margin-top: -15px;
+}
+
+.botonsito{
+    background-color: var(--primary);
+    padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 1;
+    right: 7;
     margin-top: 20px;
+    margin-bottom: 12px;
 }
 
-.coloresPaleta{
+.card-text {
+    margin-bottom: 1em;
+    color: var(--white);
+}
+
+#card-titulo{
+    font-weight: 800;
+    color: #173917;
+}
+
+.tx a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+/*Nosotros*/
+.containerNosotros{
+    width: 100vw;
+    height: 150vh;
+}
+
+.caja1{
+    background-color: var(--lime);
+    width: 100%;
+    height: 28%;
     display: flex;
     flex-direction: row;
-    margin: 20px;
 }
 
-.imgColorPaleta{
-    margin: 10px;
-    height: 200px;
-    width: 200px;
+.containerMisionVision{
+    padding: 30px;
+    width: 70%;
 }
 
-.logoEcoTravel{
-    height: 400px;
-    width: 450px;
+.caja2{
+    background-color: var(--brown);
+    width: 100%;
+    height: 28%;
+    display: flex;
+    flex-direction: row;
 }
 
-.iconEcoTravel{
-    height: 50px;
-    width: 120px;
+.caja3{
+    background-color: var(--yellow);
+    width: 100%;
+    height: 44%;
 }
 
-.pregunta{
-    font-weight: bolder;
-    font-size: 23px;
-    margin-top: 40px;
+.foto-caja1{
+    width:100%;
+    height: 100%;
 }
 
-.respuesta{
+.h2-mision{
+    color:rgb(75, 95, 75);
+    font-weight: bold;
+}
+
+.p-mision{
+    color: rgb(75, 95, 75);
+}
+
+.h2-vision{
+    color:rgb(77, 60, 15);
+    font-weight: bold;
+}
+
+.p-vision{
+    color: rgb(77, 60, 15);
+}
+
+.containerElegirnos{
+    padding: 30px;
     text-align: center;
-    font-size: 20px;
 }
 
-.linkFigma{
-    text-decoration: none;
-    color: var(--green4);
+.h2-elegirnos{
+    color: #6c654e;
+    font-weight: bold;
 }
 
-.roles{
+.ol-elegirnos{
+    color: #6c654e;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.ol-elegirnos li{
+    margin: 10px;
+}
+
+/* Reserva */
+
+.mainReserva{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-reserva{
+    background-color: var(--lime);
+    width: 70%;
+    height: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    gap: 20px;
+    box-shadow: -1px 1px 5px  gray, 1px 1px 5px  gray; 
+}
+
+.form-reserva h1{
+    color:var(--primary);
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+legend{
+    color: var(--primary);
+    margin-top: 30px;
+}
+
+.form-reserva button{
+    width: 80%;
+    height: 35px;
+    margin-left: 100px;
+    background-color:var(--primary);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    box-shadow: -2px 2px 2px #416141, 2px 2px 2px #416141;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.form-reserva label input[type="text"]{
+    width: 80%;
+    height: 35px;
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+    box-shadow: -2px 2px 5px  #747373, 2px 2px 5px  #747373;
+}
+.form-reserva label{
+    color: rgb(108, 107, 107);
+}
+.form-reserva label input[type="radio"]{
+    width: 80px;
+    height: 20px;
+    margin-top: 15px;
+    
+}
+
+.form-reserva label input:focus{
+    outline: none;
+}
+
+.containerCarrito{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
     margin-bottom: 50px;
 }
 
-.roles ul{
-    list-style: none;
-}
-
-/* Proyecto */
-
-.contenedorProyecto{
-    display: flex;
-    background-color: var(--white);
-    width: 100vw;
-}
-
-.bloqueGris{
-    width: 200%;
-    height: 600px;
-    background-image: url("assets/mundo-verde.jpg");
-}
-
-#encabezadoIdeas{
-    color: var(--pink3);
-    margin-top: 55px;
-    font-size: 30px;
-    font-family: 'Inter', sans-serif;
-}
-
-.bloqueIdeas{
-    display: flex;
-    flex-direction: column;
-}
-
-.bloqueTexto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 50px;
-    position: relative;
-    gap: 25px;
-    color: var(--pink2);
-    font-size: 22px;
-    text-align: justify;
-    padding-left: 50px;
-    padding-right: 40px;
-    line-height: 33px;
-    font-family: 'sansita one';
-}
-
-.idea1 {
+.containerCarrito h2{
+    color: var(--primary);
+    font-size: 35px;
     font-weight: bold;
-    text-decoration: underline;
+    padding-top: 30px;
+    width: 100%;
+    margin-bottom: 120px;
+    text-align: center;
 }
 
-/* Sitio */
-.contenedorSitio{
+.carritoVacio{
+    text-align: center;
+    color: #757373;
+    margin-left: 8px;
+}
+
+/*Contacto*/
+
+.mainContacto{
     width: 100%;
     height: 100%;
 }
 
-.contenedorSitio h2{
-    margin-top: 10px;
-    margin-bottom: 15px;
-    
+.imgFondo{
+    width: 100%;
+    height: 50vh;
 }
 
-.linkgrupal{
-    text-decoration: none;
-    color: var(--pink4);
-    font-weight: 600;
-    font-size: 22px;
-    margin-top: 40;
-
+.formMapa{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.form-contacto{
+    background-color:var(--lime);
+    width: 500px;
+    height: 570px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -2px 2px 2px  gray;
 }
 
-.tituloSitio{
-    font-size: 29px;
-    color: var(--green4);
-}
-
-.divlink{
+.form-header h2{
     margin-top: 20px;
+    font-weight: bold; 
+    /*text-shadow: 2px 2px 3px var(--white);*/
+    color: var(--primary);
 }
 
-/* Media Queries*/
-@media (min-width:601px){
-    nav label{
-        display: none;
-    }
-
-    .menuDisplay{
-        display: none;
-    }
+.form-contacto button{
+    width: 80%;
+    height: 35px;
+    margin-left: 50px;
+    background-color:var(--primary);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    box-shadow: -2px 2px 2px #416141;
+    
+}
+.form-contacto label input{
+    width: 80%;
+    height: 35px;
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+    box-shadow: -2px 2px 2px  #747373;
 }
 
-@media (max-width:600px){
+.form-contacto label input:focus{
+    outline: none;
+}
+
+form small{
+    color:rgb(193, 39, 39);
+    margin-top: 1px;
+}
+
+.mapa{
+    width: 700px;
+    height: 570px;
+}
+
+#mensaje{
+    height: 120px;
+    padding-bottom: 93px;
+}
+
+
+/* Media Querie */
+
+@media (max-width:601px){
     /*Header responsive*/
-    #menu, label{
-        display: none;
-    }
-
-    header{
-        margin: 0;
-    }
-
-    nav{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        margin-left: 40px;
-        margin-right: 20px;
-        margin-top: 0px;
-    }
-
-    nav label{
-        margin-top: 0px;
-    }
-    
-    input:checked ~ li{
-        display: block;
-    }
-
-    input:checked ~ label{
-        margin-top: 19px;
-        z-index: 100;
-    }
-
-    .listaNav li{
-        margin: 0;
-        display: none;
-    }
-
-    .listaNav{
-        display: none;
+    .navbar-nav{
+        gap: 20px;
+        text-align: center;
         margin-left: 0px;
     }
-
-    label{
-        box-sizing: border-box;
-        display: block;
-        font-size: 25px;
-        width: 30px;
-        height: 30px;
-        color: var(--green);
-        margin-top: 20px;
-        line-height: 30px;
-    }
-
-    .menuDisplay{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0px;
-    }
-    
-    .menuDisplay a{
-        color: var(--green);
-        text-decoration: none;
-    }
-
-    .menuDisplay{
-        display: none;
-    }
-
-
-    #menu:checked + label + .menuDisplay {
-        display: block;
-    }
-
-    .menuIcon {
-        cursor: pointer;
-    }
-
     /*Footer responsive*/
-    footer{
-        position: fixed;
+    .footer{
+        height: 80px;
+    }
+    /*Index responsive*/
+    .mainIndex{
+        background-image: url("./assets/fondoInicio-1.jpg");
+        height: 110vh;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
-    .piePagina{
-        width: 100%;
+    .bloqueIndex{
+        width: 370px;
+        height: 160px;
+        margin-left: 2%;
+        margin-top: 15%;
+        border-radius: 10px;
+        padding: 20px;
         font-size: 14px;
     }
-
-    /*Index responsive*/
-    .info{
-        margin-top: 70px;
-        margin-bottom: 0px;
-        margin-left: 20px;
-        margin-right: 20px;
-        width: inherit;
-        padding: 15px;
-        height: 450px;
-        background-color: var(--pink1);
-        color: var(--pink3);
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        line-height: 70px;
+    .bloqueIndex-2{
+        width: 400px;
+        height: 180px;
+        margin-left: 28%;
+        margin-top: 50%;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 14px;
+    }
+    /*Destino responsive*/
+    .mainDestino{
+        height: 300vh;
+    }
+    .carousel-container {
+        width: 90vw;
     }
 
-    .info p{
-        font-size: 20px;
-        font-weight: bolder;
+    .container-cards{
+        width: 90vw;
+        margin-left: 6%;
     }
-
-    /*Integrantes responsive*/
-
-    .contenedorIntegrantes{
-        margin-top: 40px;
-        margin-bottom: 100px;
+    /*Nosotros responsive*/
+    .containerNosotros{
+        height: 100%;
+    }
+    .caja1{
         display: flex;
         flex-direction: column;
     }
-
-    /*Proyecto responsive*/
-    
-    #encabezadoIdeas{
-        margin-top: 30px;
-    }
-
-    .contenedorProyecto{
-        height: 100vh;
-        flex-direction: column;
+    .containerMisionVision{
+        text-align: center;
         width: 100%;
     }
-
-    .bloqueGris{
-        display: none;
-    }
-
-    .bloqueTexto{
-        line-height: 25px;
-    }
-    .bloqueTexto p{
-        margin-top: 0px;
-        font-size: 1.2rem;
-    }
-    
-    /*Avances responsive*/
-    
-    .mainAvances{
-        width: 100vw;
-        background-color: var(--white);
-    }
-    
-    .contenedorAvances{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .bloqueParrafos{
-        height: fit-content;
-    }
-
-    .arbolSitio{
-        margin-top: 15px;
-        width: 300px;
-        height: 300px;
-    }
-
-    .coloresPaleta{
+    .caja2{
         display: flex;
-        flex-direction: column;
-        margin: 10px;
+        flex-direction: column-reverse;
+    }
+    /*Reserva responsive*/
+    .form-reserva{
+        width: 90%;
     }
 
-    .imgColorPaleta{
-        margin: 10px;
-        height: 200px;
+    .form-reserva h1{
+        font-size: 30px;
+    }
+    
+    legend{
+        margin-top: 20px;
+    }
+
+    .form-reserva button{
+        margin-left: 10%;
+    }
+    
+    .form-reserva label{
+        color: rgb(108, 107, 107);
+        font-size: 15px;
+    }
+    .form-reserva label input[type="radio"]{
         width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .containerCarrito h2{
+        margin-bottom: 80px;
     }
 
-    .rgb{
-        margin-left: 20px;
+    .reservas{
+        padding-left: 13%;
+    }
+    
+    /* Contacto responsive*/
+    .formMapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .logoEcoTravel{
-        height: 300px;
-        width: 350px;
+    .mapa{
+        width: 500px;
+        height: 370px;
+        margin-top: 70px
     }
-
-    .iconEcoTravel{
-        height: 25px;
-        width: 60px;
-    }
-
-    /*Sitio responsive*/
-
-
-}
-
-#menu{
-    display: none;
 }

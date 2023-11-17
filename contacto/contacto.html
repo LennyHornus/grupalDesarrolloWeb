@@ -3,58 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco Travel Inicio</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid listaNav">
-                <a class="navbar-brand" href="./index.html"><img src="./assets/logoEcoTravelHeader.png" alt="Logo Eco Travel Header" class="logoHeader"></a>
-                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/logoEcoTravelHeader.png" alt="Logo Eco Travel Header" class="logoHeader"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="btn btn-outline-light nav-boton" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="btn btn-outline-light" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-light" href="./destinos/destinos.html">Destinos</a>
+                            <a class="btn btn-outline-light" href="../destinos/destinos.html">Destinos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-light" href="./nosotros/nosotros.html">Nosotros</a>
+                            <a class="btn btn-outline-light" href="../nosotros/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-light" href="./reserva/reserva.html">Reserva</a>
+                            <a class="btn btn-outline-light" href="../reserva/reserva.html">Reserva</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-light" href="./contacto/contacto.html">Contacto</a>
+                            <a class="btn btn-outline-light" href="../contacto/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="mainIndex">
-        <div class="containerIndex">
-            <div class="bloqueIndex">
-                <p>¡Bienvenido a EcoTravel, tu puerta de entrada al turismo sostenible en Argentina! Descubre 
-                    la belleza de nuestro país mientras te sumerges en una experiencia única en nuestros eco 
-                    hoteles. Conecta con la naturaleza, apoya la sostenibilidad y crea recuerdos inolvidables.</p>
-            </div>
-            <div class="bloqueIndex-2">
-                <p>Un ecohotel es un alojamiento comprometido con prácticas sostenibles. Se centran en el uso de materiales ecológicos, 
-                    la conservación de recursos y la preservación de la biodiversidad local, ofreciendo a 
-                    los huéspedes una experiencia de hospedaje consciente y responsable con el medio ambiente.</p>
-            </div>
+
+    <main class="mainContacto">
+        <div class>
+            <img src="../assets/amanecer-panoramica.jpg" alt="" class="imgFondo">
+        </div>
+        <div class="formMapa">
+            <form class="form-contacto" id="signup">
+                <div class="form-header">
+                    <h2>Contactanos</h2>
+                </div>
+                <label>
+                    <input type="text" id="nombre" placeholder="Nombre y Apellido">
+                    <br> 
+                    <small id="errorNombre"></small>
+                </label>
+                <label>
+                    <input type="text" id="telefono" placeholder="Telefono">
+                    <br> 
+                    <small id="errorTelefono"></small>
+                </label>
+                <label>
+                    <input type="text" id="email" placeholder="Email">
+                    <br> 
+                    <small id="errorEmail"></small>
+                </label>
+                <label>
+                    <input type="text" id="mensaje" placeholder="Mensaje">
+                    <br> 
+                    <small id="errorMensaje"></small>
+                </label>
+                <small id="errorSubmit"></small>
+                <button>Enviar</button>
+            </form>
+            <iframe  class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.490480559636!2d-58.38449352427168!3d-34.617043558202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaba6ac89b35%3A0x1a2dc24cbca665a7!2sUADE!5e0!3m2!1ses-419!2sar!4v1699815985593!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
-
+    
     <footer>
-        <ul class="piePagina text-light pt-2 div-footer">
-            <div class="container text-center text-md-start ">
+        <ul class="piePagina text-light pt-5 pb-4">
+            
+            <div class="container text-center text-md-start">
                 <div class="row text-center text-md-start">
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 p-font">
                         <h5 class="text-uppercase mb-4 font-weight-bold text-light">Nosotros</h5>
@@ -87,12 +110,14 @@
                         <p>
                             © Copyright - Todos los derechos reservados - <a href="https://www.freepik.es/" class="text-light linkFooter" target="_blank">Freepik</a>
                         </p>
-                        <h5 class="text-uppercase mb-4 font-weight-bold text-light"><li><img src="./assets/logoUade.png" alt="logoUadeFooter" class="logoUadeFooter"></li></h5>
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-light"><li><img src="../assets/logoUade.png" alt="logoUadeFooter" class="logoUadeFooter"></li></h5>
                     </div>
                 </div>
             </div>
         </ul>
     </footer>
+
+    <script src="./form.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid listaNav">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/logoEcoTravelHeader.png" alt="Logo Eco Travel Header" class="logoHeader"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light" href="../destinos/destinos.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light" href="../nosotros/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light" href="../reserva/reserva.html">Reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light" href="../contacto/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mainReserva">
+        <form id="reserva" class="form-reserva">
+            <h1>Reservas</h1>
+            <label>
+              <input type="text" id="nombre" placeholder="Nombre y Apellido">
+              <br>
+              <small id="errorNombre"></small>
+            </label>
+            <label>
+              <input type="text" id="telefono" placeholder="Telefono">
+              <br>
+              <small id="errorTelefono"></small>
+            </label>
+            <label>
+              <input type="text" id="email" placeholder="Email">
+              <br>
+              <small id="errorEmail"></small>
+            </label>
+            
+            <fieldset>
+              <legend>Lugar de destino</legend>
+              <div class="opciones">
+              <label>
+                <input type="radio" name="destino" id="destino1">
+                Lilay Suites, Bariloche.
+              </label>
+              <label>
+                <input type="radio" name="destino" id="destino2">
+                Falls Iguazu, Iguazu.
+              </label>
+              <label>
+                <input type="radio" name="destino" id="destino3">
+                Altitud 720, VGB
+              </label>
+              <label>
+                <input type="radio" name="destino" id="destino4">
+                Xelena Hotel, Calafate
+              </label>
+              <label>
+                <input type="radio" name="destino" id="destino5">
+                Chalten Suites Hotel
+              </label>
+              <label>
+                <input type="radio" name="destino" id="destino6">
+                Arakur Ushuaia
+              </label>
+              </div>
+              <small id="errorDestino"></small>
+            </fieldset>
+
+            <fieldset>
+              <legend>Cantidad de personas</legend>
+              <label>
+                <input type="radio" name="personas" id="personas1">
+                1
+              </label>
+              <label>
+                <input type="radio" name="personas" id="personas2">
+                2
+              </label>
+              <label>
+                <input type="radio" name="personas" id="personas3">
+                3
+              </label>
+              <label>
+                <input type="radio" name="personas" id="personas4">
+                4
+              </label>
+              <label>
+                <input type="radio" name="personas" id="personas5">
+                5
+              </label>
+              <br>
+              <small id="errorPersonas"></small>
+            </fieldset>
+        
+            <fieldset>
+              <legend>Formas de pago</legend>
+              <label>
+                <input type="radio" name="metodoPago" id="metodoPago1">
+                Efectivo
+              </label>
+              <label>
+                <input type="radio" name="metodoPago" id="metodoPago2">
+                Transferencia
+              </label>
+              <label>
+                <input type="radio" name="metodoPago" id="metodoPago3">
+                Tarjeta Debito
+              </label>
+              <label>
+                <input type="radio" name="metodoPago" id="metodoPago4">
+                Tarjeta Credito
+              </label>
+              <label>
+                <input type="radio" name="metodoPago" id="metodoPago5">
+                Mercado Pago
+              </label>
+              <br>
+              <small id="errorMetodoPago"></small>
+            </fieldset>
+
+            <button type="submit">Reservar</button>
+        </form>
+
+        <div class="containerCarrito">
+          <h2>Carrito</h2>
+          <div class="row container-cards reservas"  id="container">
+            
+          </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <ul class="piePagina text-light pt-5 pb-4">
+            
+            <div class="container text-center text-md-start">
+                <div class="row text-center text-md-start">
+
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 p-font">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-light">Nosotros</h5>
+                        <hr class="mb-4">
+                        <p>Magali Catrinacio</p>
+                        <p>Lenny Ramos Hornus</p>
+                        <p>Franco Quintieri</p>
+                        <p>Valentin Banegas</p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 p-font">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-light">Materia</h5>
+                        <hr class="mb-4">
+                        <p>
+                            Trabajo Grupal de la materia Diseño y desarollo web
+                        </p>
+                    </div>
+
+
+                    <div class="col-md-2 col-lg col-xl-2 mx-auto mt-3 p-font">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-light">Link</h5>
+                        <hr class="mb-4">
+                        <p>
+                            <a href="https://lennyhornus.github.io/grupalDesarrolloWeb/" class="text-light linkFooter">Enlace al sitio grupal</a>
+                        </p>
+                    </div>
+
+                    <hr class="mb-4">
+                    <div class="text-center mb-2 p-font">
+                        <p>
+                            © Copyright - Todos los derechos reservados - <a href="https://www.freepik.es/" class="text-light linkFooter" target="_blank">Freepik</a>
+                        </p>
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-light"><li><img src="../assets/logoUade.png" alt="logoUadeFooter" class="logoUadeFooter"></li></h5>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
